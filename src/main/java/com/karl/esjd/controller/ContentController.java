@@ -30,7 +30,7 @@ public class ContentController {
     public List<Map<String,Object>> search(@PathVariable String keywords,
                                            @PathVariable int pageNo,
                                            @PathVariable int pageSize) throws Exception {
-        return contentService.searchPage(keywords,pageNo,pageSize);
+        return contentService.searchPageHigh(keywords,pageNo,pageSize);
     }
 
 
